@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Real Madrid</title>
+  <link rel="icon" href="bilder/logo.jpg">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="background">
+  </div>
+
+  <header>
+    <div class="menu-toggle" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="overlay"></div>
+
+      <nav>
+        <img class="logo" src="bilder/logo.jpg" alt="logo">
+        <h1 class="brand"><a href="index.html">Real<span> Madrid</span></a></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="undersidor/players/players.html">Players</a></li>
+          <li><a href="undersidor/managers/managers.html">Managers</a></li>
+          <li><a href="undersidor/trophies/trophies.html">Trophies</a></li>
+          <li><a href="undersidor/clasico/clasico.html">El Clásico</a></li>
+          <li><a href="mailto:mohannad.abdallah03@gmail.com">Contact</a></li>
+          <li><a href="undersidor/about/about.html">About</a></li>
+        </ul>
+      </nav>
+
+
+  </header>
+  <script>
+    var open = document.getElementById("hamburger");
+    var changeIcon = true;
+    open.addEventListener("click", function() {
+      var overlay = document.querySelector(".overlay");
+      var nav = document.querySelector("nav");
+      var icon = document.querySelector(".menu-toggle i");
+      overlay.classList.toggle("menu-open");
+      nav.classList.toggle("menu-open");
+      if (changeIcon) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+        changeIcon = false;
+      } else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+        changeIcon = true;
+      }
+    });
+  </script>
+  <div class="container">
+
+    <div class="about">
+      <h2>About The Team</h2>
+      <p class="intro">
+
+        Real Madrid is one of the professional football clubs in Spain, based in the capital, and
+        its players wear all-white club uniforms, which is why the club is famous for the title
+        "Los Blancos", meaning the white color in flying, Madrid is one of the most famous and
+        popular football clubs; As it is a large audience in Spain and in all countries of the world.
+      </p>
+
+      <br>
+      <br>
+
+      <h2>Establishing Of Real Madrid</h2>
+      <p class="intro">
+        The club was established in May 1902 and was chaired by Juan Padrós. It is noteworthy that
+        Julian Palacios played a major role in establishing the club, as he was one of the advocates
+        for the establishment of the club. But it was Juan Badrós who officially created it in 1902.
+        With the spread of the game and the increasing number of fans, the club’s managers proposed
+        holding a football competition in Madrid, and the first competition was held with the participation
+        of five football clubs, and then the King of Spain competition was established in which the club
+        distinguished Madrid by obtaining the title for four Times in the first six tournaments.
+        <br>
+        <br>
+        Spanish football experienced problems in its early stages, which had an impact on Madrid at the
+        time, but the club's management tried to overcome these obstacles, and they enlarged their stadiums
+        to accommodate a greater number of fans, and this led to an increase in the team's financial revenues,
+        and the increase in fans' turnout pushed the Spanish Royal House to award the title Real, which means
+        my property to the club, to become "Real Madrid" or "Royal Club of Madrid".
+
+      </p>
+      <h2>Real Madrid's Stadiums</h2>
+      <p class="intro">
+        Several stadiums have been established for Real Madrid, the most prominent of which are:
+        <br>
+        <br>
+        ●Camp del La Industrial, which is Real Madrid's first stadium; It was inaugurated in 1912, and subsequently witnessed expansions to increase its capacity for the masses.<br>
+        ●Chamartin Stadium: It is located in the northern region of the capital, Madrid, and was officially inaugurated in May 1924; When Real Madrid hosted Newcastle United with a friendly match that ended with Real Madrid winning 3-2, and the club underwent restoration and expansion processes, and it was officially reopened in 1939 with a greater audience capacity than before; Where it can accommodate approximately 25 thousand spectators.<br>
+        ●Santiago Bernabeu Stadium: It is the club's current home stadium.
+      </p>
+      <img class="santiago" src="bilder/santiago.jpg" alt="Santiago Satadium">
+
+    </div>
+  </div>
+
+</body>
+
+</html>

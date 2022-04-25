@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Real Madrid | Managers</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="icon" href="../../bilder/logo.jpg">
+  <link rel="stylesheet" href="managers.css">
+
+</head>
+
+<body>
+  <div class="background">
+  </div>
+
+  <header>
+    <div class="menu-toggle" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="overlay"></div>
+
+      <nav>
+        <img class="logo" src="../../bilder/logo.jpg" alt="logo">
+        <h1 class="brand"><a href="../../index.html">Real<span> Madrid</span></a></h1>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../players/players.html">Players</a></li>
+          <li><a href="managers.html">Managers</a></li>
+          <li><a href="../trophies/trophies.html">Trophies</a></li>
+          <li><a href="../clasico/clasico.html">El Clásico</a></li>
+          <li><a href="mailto:mohannad.abdallah03@gmail.com">Contact</a></li>
+          <li><a href="../about/about.html">About</a></li>
+        </ul>
+      </nav>
+
+
+  </header>
+  <script>
+    var open = document.getElementById("hamburger");
+    var changeIcon = true;
+    open.addEventListener("click", function() {
+      var overlay = document.querySelector(".overlay");
+      var nav = document.querySelector("nav");
+      var icon = document.querySelector(".menu-toggle i");
+      overlay.classList.toggle("menu-open");
+      nav.classList.toggle("menu-open");
+      if (changeIcon) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+        changeIcon = false;
+      } else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+        changeIcon = true;
+      }
+    });
+  </script>
+
+  <div class="contain">
+    <div class="gallery">
+      <a href="https://en.wikipedia.org/wiki/Zinedine_Zidane"><img src="managers-bilder/managers/zidane.jpg" alt=""></a>
+      <div class="desc">
+        French -
+        Age 48
+      </div>
+    </div>
+    <div class="gallery">
+      <a href="https://en.wikipedia.org/wiki/David_Bettoni"><img src="managers-bilder/managers/david.jpg" alt=""></a>
+      <div class="desc">
+        French -
+        Age 49
+      </div>
+    </div>
+    <div class="gallery">
+      <a href="https://sortitoutsi.net/football-manager-2020/person/8425893/hamidou-msaidie"><img src="managers-bilder/managers/hamidou.jpg" alt=""></a>
+      <div class="desc">
+        French -
+        Age 45
+      </div>
+    </div>
+    <div class="gallery">
+      <a href="https://www.transfermarkt.com/gregory-dupont/profil/trainer/3965"><img src="managers-bilder/managers/dupont.jpg" alt=""></a>
+      <div class="desc">
+        French -
+        Age 48
+      </div>
+    </div>
+    <div class="gallery">
+      <a href="https://www.transfermarkt.com/roberto-vazquez/profil/trainer/25160"><img src="managers-bilder/managers/roberto.jpg" alt=""></a>
+      <div class="desc">
+        Spanish -
+        Age 46
+      </div>
+    </div>
+    <div class="gallery">
+      <a href="https://sortitoutsi.net/football-manager-2020/person/67245073/javier-mallo"><img src="managers-bilder/managers/javier.jpg" alt=""></a>
+      <div class="desc">
+        Spanish -
+        Age 44
+      </div>
+    </div>
+    <div class="gallery">
+      <a href="https://fmdataba.com/20/s/26701/jose-carlos-garcia-parrales/"><img src="managers-bilder/managers/carlos.jpg" alt=""></a>
+      <div class="desc">
+        Spanish -
+        Age 39
+      </div>
+    </div>
+  </div>
+
+</body>

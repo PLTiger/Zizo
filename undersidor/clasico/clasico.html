@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Real Madrid</title>
+  <link rel="icon" href="../../bilder/logo.jpg">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="clasico.css">
+</head>
+
+<body>
+  <div class="background">
+  </div>
+
+  <header>
+    <div class="menu-toggle" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="overlay"></div>
+
+      <nav>
+        <img class="logo" src="../../bilder/logo.jpg" alt="logo">
+        <h1 class="brand"><a href="index.html">Real<span> Madrid</span></a></h1>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../players/players.html">Players</a></li>
+          <li><a href="../managers/managers.html">Managers</a></li>
+          <li><a href="../trophies/trophies.html">Trophies</a></li>
+          <li><a href="clasico.html">El Clásico</a></li>
+          <li><a href="mailto:mohannad.abdallah03@gmail.com">Contact</a></li>
+          <li><a href="../about/about.html">About</a></li>
+        </ul>
+      </nav>
+
+
+  </header>
+  <script>
+    var open = document.getElementById("hamburger");
+    var changeIcon = true;
+    open.addEventListener("click", function() {
+      var overlay = document.querySelector(".overlay");
+      var nav = document.querySelector("nav");
+      var icon = document.querySelector(".menu-toggle i");
+      overlay.classList.toggle("menu-open");
+      nav.classList.toggle("menu-open");
+      if (changeIcon) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+        changeIcon = false;
+      } else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+        changeIcon = true;
+      }
+    });
+  </script>
+  <div class="container">
+
+    <div class="about">
+      <h2>El Clásico</h2>
+      <p class="intro">
+
+        El Clásico, is a derby match in the sport of football,
+        between the two poles of Spanish football, Real Madrid and FC Barcelona, ​​
+        and it is one of the forms of competition between the two largest and most
+        important clubs in the Spanish capital Madrid and Barcelona,
+        ​​the two largest cities in Spain. The word El Clasico is used for the matches
+        that bring together the two teams in the Spanish League, but nowadays,
+        any match that brings them together is known as El Clásico, whether the tournament
+        is the King's Cup, the European Champions League, or anything else.
+        This match represents a struggle between the two largest cities in Spain,
+        and is sometimes referred to as a political conflict between the two cities,
+        between the capital Madrid, which is seen as the bearer of Spanish nationalism,
+        and Barcelona, ​​which carries the banner of Catalan nationalism.
+      </p>
+
+      <br>
+      <img src="../../bilder/clasico.jpg" alt="">
+      <br>
+
+      <p class="intro">
+        It is the most watched match in the world, with the number of viewers reaching hundreds of millions.
+        In the match that took place in April 2017, the number of viewers reached 650 million. This derby is
+        not only considered one of the most famous European derbies, but also one of the most famous in the world,
+        as it represents a struggle between two teams who collectively won 18 European Champions League and
+        60 domestic league championships.
+
+      </p>
+
+      <br>
+      <p class="intro">
+        The two clubs are among the richest and most successful football clubs in the world. Real Madrid is the
+        largest club in terms of fan base, according to a 2007 Harvard University study. Also in 2007 by the
+        Spanish Social Research Center, a survey showed that Real Madrid is supported by 32% of the Spanish
+        population, while 25% expressed their support for Barcelona. According to a poll conducted by the Ikerfel
+        Foundation, in 2011 and published in the newspaper AS, the poll showed that Barcelona are the most popular
+        team in Spain with 44%, while Real Madrid are in second place with 37%. A poll conducted by the German
+        sports research agency + Markt in 2010 revealed that Barcelona is more popular in Europe than Real Madrid,
+        as Barcelona has nearly 57.8 million fans across Europe, while Real Madrid has only 31.3 million fans.
+        The fans of both clubs are at the forefront in terms of follow-up and admiration on the official pages of
+        the two clubs on social media sites like Facebook, Twitter and others compared to other clubs, with 117
+        million followers and admirers for Barcelona club official pages and 108 million for Real Madrid official
+        pages, according to a statistic published by the Spanish newspaper Marca. At the end of 2014.
+
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>
